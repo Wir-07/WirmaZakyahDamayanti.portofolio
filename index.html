@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wirma Zakyah Damayanti | Portofolio & Personal Branding</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#060D0A',      /* Rich obsidian emerald black */
+                        darkCard: '#0D1C16',    /* Modern dark emerald card bg */
+                        darkBorder: '#1B362B',  /* Subtle green border */
+                        creamLight: '#F7F4EA',  /* Warm Cream Teks utama */
+                        creamMuted: '#D8D3C5',  /* Cream sekunder */
+                        emeraldGlow: '#10B981', /* Glowing Green */
+                        emeraldNeon: '#34D399', /* Accent Glow */
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    boxShadow: {
+                        'glow-sm': '0 0 15px rgba(16, 185, 129, 0.25)',
+                        'glow-md': '0 0 30px rgba(52, 211, 153, 0.35)',
+                        'glow-lg': '0 0 50px rgba(16, 185, 129, 0.45)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Modern Aesthetic Background Patterns */
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+        }
+        
+        .bg-dots-pattern {
+            background-image: radial-gradient(rgba(52, 211, 153, 0.12) 1.5px, transparent 1.5px);
+            background-size: 24px 24px;
+        }
+
+        /* Glow Effects */
+        .glow-text {
+            text-shadow: 0 0 16px rgba(52, 211, 153, 0.6);
+        }
+        .glow-border {
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.15);
+            transition: all 0.3s ease;
+        }
+        .glow-border:hover {
+            box-shadow: 0 0 25px rgba(52, 211, 153, 0.4);
+            border-color: #34D399;
+        }
+        .glass-panel {
+            background: rgba(13, 28, 22, 0.75);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-creamLight font-sans selection:bg-emeraldGlow selection:text-darkBg relative overflow-x-hidden bg-grid-pattern">
+
+    <!-- Ambient Glowing Backdrops (Orbs & Aura) -->
+    <div class="fixed top-[-10%] left-[-10%] w-[550px] h-[550px] bg-emeraldGlow/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="fixed top-[40%] right-[-10%] w-[450px] h-[450px] bg-emeraldNeon/10 rounded-full blur-[130px] pointer-events-none"></div>
+    <div class="fixed bottom-[-10%] left-[20%] w-[500px] h-[500px] bg-emeraldGlow/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <!-- NAVBAR (Sesuai Guidebook) -->
+    <header class="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-5xl z-50">
+        <nav class="glass-panel border border-darkBorder rounded-full px-5 py-3 flex items-center justify-between shadow-2xl">
+            <!-- Logo / Name Initials -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded-full bg-emeraldGlow/20 border border-emeraldNeon/50 flex items-center justify-center text-emeraldNeon font-bold group-hover:shadow-glow-sm transition">
+                    W
+                </div>
+                <span class="font-bold text-sm sm:text-base tracking-wide text-creamLight group-hover:text-emeraldNeon transition">
+                    WIRMA ZAKYAH D.
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <div class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium text-creamMuted">
+                <a href="#work" class="hover:text-emeraldNeon transition">Work</a>
+                <a href="#capabilities" class="hover:text-emeraldNeon transition">What I Can Do</a>
+                <a href="#about" class="hover:text-emeraldNeon transition">About</a>
+                <a href="#achievements" class="hover:text-emeraldNeon transition">Achievements</a>
+                <a href="#contact" class="hover:text-emeraldNeon transition">Contact</a>
+            </div>
+
+            <!-- Hire Me CTA Button -->
+            <a href="#contact" class="px-4 py-2 text-xs font-semibold text-darkBg bg-emeraldNeon hover:bg-emeraldGlow rounded-full shadow-glow-sm transition-all duration-300 hover:scale-105">
+                Hire Me
+            </a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center justify-center pt-28 pb-16 px-4 relative">
+        <!-- Subtle Pattern Accent for Hero -->
+        <div class="absolute inset-0 bg-dots-pattern opacity-60 pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center flex flex-col items-center relative z-10">
+            
+            <!-- Foto Profil -->
+            <div class="relative group mb-8">
+                <div class="absolute -inset-1.5 bg-gradient-to-r from-emeraldGlow via-emeraldNeon to-emeraldGlow rounded-full blur opacity-60 group-hover:opacity-100 transition duration-500"></div>
+                <div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-2 border-emeraldNeon p-1 bg-darkCard">
+                    <img src="wirma zakyah d..jpeg" alt="Wirma Zakyah Damayanti" class="w-full h-full object-cover rounded-full object-center">
+                </div>
+            </div>
+
+            <!-- Tagline & Heading -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emeraldGlow/15 border border-emeraldNeon/40 text-emeraldNeon text-xs font-medium mb-4 shadow-glow-sm">
+                <span class="w-2 h-2 rounded-full bg-emeraldNeon animate-pulse"></span>
+                Sistem Informasi UNESA & Penulis Nasional
+            </div>
+            
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-creamLight mb-4 leading-tight">
+                Menghubungkan <span class="text-transparent bg-clip-text bg-gradient-to-r from-emeraldNeon to-emeraldGlow glow-text">Teknologi</span> & <span class="font-serif italic font-normal text-creamMuted">Literasi Karya</span>
+            </h1>
+            
+            <p class="max-w-2xl text-creamMuted text-sm sm:text-base mb-8 leading-relaxed">
+                Halo! Saya <b>Wirma Zakyah Damayanti</b>, mahasiswa Sistem Informasi Universitas Negeri Surabaya, lulusan Mumtaz PMDG Putri 4, serta Penulis Penulis Unggulan Nasional. Berfokus pada analisis data, tata kelola teknologi, dan penulisan kreatif/teknis.
+            </p>
+
+            <!-- Quick Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="https://canva.link/7hco6q3obbixstg" target="_blank" class="px-6 py-3 rounded-full bg-emeraldNeon text-darkBg font-bold text-sm shadow-glow-md hover:bg-emeraldGlow transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fa-solid fa-book-open"></i> Portfolio Canvalink
+                </a>
+                <a href="#work" class="px-6 py-3 rounded-full bg-darkCard border border-darkBorder text-creamLight font-semibold text-sm hover:border-emeraldNeon transition flex items-center gap-2">
+                    Lihat Karya Tulis <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WORK GALLERY SECTION -->
+    <section id="work" class="py-20 px-4 max-w-6xl mx-auto border-t border-darkBorder/40 relative">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="text-xs font-bold tracking-widest text-emeraldNeon uppercase">Selected Work</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-creamLight mt-1">Work Gallery</h2>
+                <p class="text-creamMuted text-sm mt-2 max-w-xl">
+                    Kumpulan antologi cerpen, puisi ber-QRCBN, karya tulis yang terbit secara nasional, serta karya kepenulisan digital.
+                </p>
+            </div>
+            <a href="https://canva.link/7hco6q3obbixstg" target="_blank" class="mt-4 md:mt-0 text-sm font-semibold text-emeraldNeon hover:underline flex items-center gap-2">
+                View Full Canva Portfolio <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+        </div>
+
+        <!-- Grid Cards Karya -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Item 1: GELIS Cerpen -->
+            <div class="glass-panel p-6 rounded-2xl border border-darkBorder glow-border flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute -right-6 -top-6 w-20 h-20 bg-emeraldGlow/10 rounded-full blur-xl group-hover:bg-emeraldNeon/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 text-[10px] font-bold rounded-md bg-emeraldGlow/20 text-emeraldNeon border border-emeraldGlow/40">
+                            Cerpen Kurasi
+                        </span>
+                        <span class="text-xs text-creamMuted">Juli 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-creamLight mb-2">GELIS Cerpen Vol. 45</h3>
+                    <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                        Terpilih dan dibukukan sebagai Penulis Terpilih dalam event GELIS Cerpen Vol. 45 oleh Teori Kata Publishing setelah proses kurasi karya ketat.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-darkBorder/60 flex items-center justify-between text-xs font-semibold text-emeraldNeon">
+                    <span>Teori Kata Publishing</span>
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+            </div>
+
+            <!-- Item 2: Listaka.id Puisi & Cerpen -->
+            <div class="glass-panel p-6 rounded-2xl border border-darkBorder glow-border flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute -right-6 -top-6 w-20 h-20 bg-emeraldGlow/10 rounded-full blur-xl group-hover:bg-emeraldNeon/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 text-[10px] font-bold rounded-md bg-emeraldGlow/20 text-emeraldNeon border border-emeraldGlow/40">
+                            Puisi & Cerpen QRCBN
+                        </span>
+                        <span class="text-xs text-creamMuted">Agustus 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-creamLight mb-2">"Rindu yang Berat" - Listaka.id</h3>
+                    <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                        Karya puisi dan cerpen dibukukan dalam Lomba Menulis Tingkat Nasional oleh Listaka.id dengan nomor resmi QRCBN: 62-6100-9658-776.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-darkBorder/60 flex items-center justify-between text-xs font-semibold text-emeraldNeon">
+                    <span>QRCBN National Book</span>
+                    <i class="fa-solid fa-book"></i>
+                </div>
+            </div>
+
+            <!-- Item 3: AirizzHeera Publisher -->
+            <div class="glass-panel p-6 rounded-2xl border border-darkBorder glow-border flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute -right-6 -top-6 w-20 h-20 bg-emeraldGlow/10 rounded-full blur-xl group-hover:bg-emeraldNeon/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 text-[10px] font-bold rounded-md bg-emeraldGlow/20 text-emeraldNeon border border-emeraldGlow/40">
+                            Penulis Unggulan
+                        </span>
+                        <span class="text-xs text-creamMuted">Juli 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-creamLight mb-2">"Kala Pertama Kita Berjumpa"</h3>
+                    <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                        Dianugerahi sebagai Penulis Unggulan dalam Antologi Cerpen Episode 8 oleh AirizzHeera Publisher.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-darkBorder/60 flex items-center justify-between text-xs font-semibold text-emeraldNeon">
+                    <span>AirizzHeera Publisher</span>
+                    <i class="fa-solid fa-award"></i>
+                </div>
+            </div>
+
+            <!-- Item 4: Halo Penulis Group -->
+            <div class="glass-panel p-6 rounded-2xl border border-darkBorder glow-border flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute -right-6 -top-6 w-20 h-20 bg-emeraldGlow/10 rounded-full blur-xl group-hover:bg-emeraldNeon/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 text-[10px] font-bold rounded-md bg-emeraldGlow/20 text-emeraldNeon border border-emeraldGlow/40">
+                            Antologi Puisi
+                        </span>
+                        <span class="text-xs text-creamMuted">Juli 2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-creamLight mb-2">Lomba Puisi Batch 23 Vol. 3</h3>
+                    <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                        Terpilih dan dibukukan dalam event Lomba Puisi Batch 23 Volume 3 Tingkat Nasional yang diselenggarakan oleh Halo Penulis Group.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-darkBorder/60 flex items-center justify-between text-xs font-semibold text-emeraldNeon">
+                    <span>Halo Penulis Group</span>
+                    <i class="fa-solid fa-feather"></i>
+                </div>
+            </div>
+
+            <!-- Item 5: Content & Digital Writing -->
+            <div class="glass-panel p-6 rounded-2xl border border-darkBorder glow-border flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute -right-6 -top-6 w-20 h-20 bg-emeraldGlow/10 rounded-full blur-xl group-hover:bg-emeraldNeon/20 transition"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 text-[10px] font-bold rounded-md bg-emeraldGlow/20 text-emeraldNeon border border-emeraldGlow/40">
+                            Creative & Technical
+                        </span>
+                        <span class="text-xs text-creamMuted">Ongoing</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-creamLight mb-2">Karya Penulisan Digital & Content</h3>
+                    <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                        Pembuatan artikel, ulasan teknologis, modul bimbingan pengajaran, dan karya sastra yang dipublikasikan secara rutin di media sosial & blog.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-darkBorder/60 flex items-center justify-between text-xs font-semibold text-emeraldNeon">
+                    <span>@antcha07</span>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+            </div>
+
+            <!-- Item 6: Portfolio Design Canvas Link -->
+            <div class="glass-panel p-6 rounded-2xl border border-emeraldNeon/40 bg-emeraldGlow/5 glow-border flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-dots-pattern opacity-40 pointer-events-none"></div>
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 text-[10px] font-bold rounded-md bg-emeraldNeon text-darkBg font-bold">
+                            Interactive Showcase
+                        </span>
+                        <span class="text-xs text-emeraldNeon font-medium">Canva Link</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-creamLight mb-2">Dokumentasi Portofolio Canva</h3>
+                    <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                        Akses visual portofolio lengkap mencakup arsip desain, rincian buku terbit, dan dokumentasi naskah.
+                    </p>
+                </div>
+                <a href="https://canva.link/7hco6q3obbixstg" target="_blank" class="pt-4 border-t border-darkBorder/60 flex items-center justify-between text-xs font-bold text-emeraldNeon hover:underline">
+                    <span>Buka Canva Link</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHAT I CAN DO SECTION -->
+    <section id="capabilities" class="py-20 px-4 max-w-6xl mx-auto border-t border-darkBorder/40">
+        <div class="mb-12">
+            <span class="text-xs font-bold tracking-widest text-emeraldNeon uppercase">My Capabilities</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-creamLight mt-1">What I Can Do</h2>
+            <p class="text-creamMuted text-sm mt-2 max-w-2xl">
+                Mengkombinasikan keahlian literasi/kepenulisan, analisis data dasar, pemahaman tata kelola sistem informasi, serta administrasi keuangan.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Capability 01 -->
+            <div class="glass-panel p-8 rounded-2xl border border-darkBorder glow-border relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-20 h-20 bg-dots-pattern opacity-30 pointer-events-none"></div>
+                <span class="text-4xl font-extrabold text-emeraldGlow/25 absolute top-6 right-6">01</span>
+                <div class="w-12 h-12 rounded-xl bg-emeraldGlow/20 border border-emeraldNeon/40 flex items-center justify-center text-emeraldNeon mb-6 text-xl shadow-glow-sm">
+                    <i class="fa-solid fa-feather-pointed"></i>
+                </div>
+                <h3 class="text-xl font-bold text-creamLight mb-3">Penulisan Kreatif & Teknis</h3>
+                <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                    Menguasai penulisan fiksi (cerpen, puisi nasional) dan non-fiksi/teknis, penyusunan dokumentasi kurikulum, serta penyuntingan naskah secara rapi.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Content Writing</span>
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Kurasi Naskah</span>
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Technical Doc</span>
+                </div>
+            </div>
+
+            <!-- Capability 02 -->
+            <div class="glass-panel p-8 rounded-2xl border border-darkBorder glow-border relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-20 h-20 bg-dots-pattern opacity-30 pointer-events-none"></div>
+                <span class="text-4xl font-extrabold text-emeraldGlow/25 absolute top-6 right-6">02</span>
+                <div class="w-12 h-12 rounded-xl bg-emeraldGlow/20 border border-emeraldNeon/40 flex items-center justify-center text-emeraldNeon mb-6 text-xl shadow-glow-sm">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold text-creamLight mb-3">Analisis Data & AI Tools</h3>
+                <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                    Pemahaman dasar data analytics, pengoperasian spreadsheet (Excel/Google Sheets), serta pemanfaatan Google AI (Gemini for Education) untuk produktivitas.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Data Analytics</span>
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Google Gemini AI</span>
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Excel & Sheets</span>
+                </div>
+            </div>
+
+            <!-- Capability 03 -->
+            <div class="glass-panel p-8 rounded-2xl border border-darkBorder glow-border relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-20 h-20 bg-dots-pattern opacity-30 pointer-events-none"></div>
+                <span class="text-4xl font-extrabold text-emeraldGlow/25 absolute top-6 right-6">03</span>
+                <div class="w-12 h-12 rounded-xl bg-emeraldGlow/20 border border-emeraldNeon/40 flex items-center justify-center text-emeraldNeon mb-6 text-xl shadow-glow-sm">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <h3 class="text-xl font-bold text-creamLight mb-3">Administrasi & Keuangan</h3>
+                <p class="text-xs text-creamMuted leading-relaxed mb-4">
+                    Pengalaman nyata mengelola transaksi unit usaha, pencatatan jurnal keuangan bulanan, audit barang berkala, dan penyusunan laporan keuangan.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Jurnal Keuangan</span>
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Audit Inventory</span>
+                    <span class="px-2 py-1 text-[10px] rounded bg-darkBg border border-darkBorder text-creamMuted">Manajemen Waktu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="py-20 px-4 max-w-6xl mx-auto border-t border-darkBorder/40">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+            
+            <!-- Left Info Block -->
+            <div class="lg:col-span-5">
+                <span class="text-xs font-bold tracking-widest text-emeraldNeon uppercase">About Me</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-creamLight mt-1 mb-4">
+                    Informatics Student & Published Writer
+                </h2>
+                
+                <!-- Mandatory Guidebook Info Card: Nama, NIM, Prodi -->
+                <div class="p-5 rounded-xl bg-darkCard border border-emeraldNeon/30 mb-6 glow-border relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-16 h-16 bg-dots-pattern opacity-40 pointer-events-none"></div>
+                    <h3 class="text-xs font-bold text-emeraldNeon uppercase tracking-wider mb-3">Identitas Mahasiswa</h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-creamLight">
+                        <li><span class="text-creamMuted">Nama Lengkap:</span> <b>Wirma Zakyah Damayanti</b></li>
+                        <li><span class="text-creamMuted">NIM:</span> <b>26051214100</b></li>
+                        <li><span class="text-creamMuted">Program Studi:</span> <b>S1 Sistem Informasi</b></li>
+                        <li><span class="text-creamMuted">Perguruan Tinggi:</span> <b>Universitas Negeri Surabaya</b></li>
+                        <li><span class="text-creamMuted">Status Alumni:</span> <b>PMDG Putri Kampus 4 (Predikat Mumtaz)</b></li>
+                    </ul>
+                </div>
+
+                <!-- Highlight Statistics -->
+                <div class="grid grid-cols-3 gap-3 text-center mb-6">
+                    <div class="p-3 rounded-lg bg-darkCard border border-darkBorder">
+                        <span class="block text-2xl font-bold text-emeraldNeon">4+</span>
+                        <span class="text-[10px] text-creamMuted">Buku Terbit</span>
+                    </div>
+                    <div class="p-3 rounded-lg bg-darkCard border border-darkBorder">
+                        <span class="block text-2xl font-bold text-emeraldNeon">537</span>
+                        <span class="text-[10px] text-creamMuted">TOEFL Score</span>
+                    </div>
+                    <div class="p-3 rounded-lg bg-darkCard border border-darkBorder">
+                        <span class="block text-2xl font-bold text-emeraldNeon">1 Th+</span>
+                        <span class="text-[10px] text-creamMuted">Pengabdian</span>
+                    </div>
+                </div>
+
+                <!-- Resume Download Button -->
+                <a href="#" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emeraldNeon text-darkBg font-bold text-sm hover:bg-emeraldGlow shadow-glow-sm transition">
+                    <i class="fa-solid fa-file-arrow-down"></i> Unduh CV / Resume PDF
+                </a>
+            </div>
+
+            <!-- Right Narration Block -->
+            <div class="lg:col-span-7 space-y-6 text-creamMuted text-sm leading-relaxed">
+                <div class="glass-panel p-6 rounded-2xl border border-darkBorder">
+                    <h3 class="text-base font-bold text-creamLight mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-emeraldNeon"></i> Latar Belakang & Akademik
+                    </h3>
+                    <p>
+                        Saya merupakan lulusan Pondok Modern Darussalam Gontor Putri Kampus 4 (2019–2025) dengan nilai akhir 83,00 (predikat Mumtaz), konsisten menempati kelas unggulan selama 6 tahun. Saat ini saya menempuh studi S1 Sistem Informasi di Universitas Negeri Surabaya untuk mengasah pemahaman tata kelola teknologi dan analisis data.
+                    </p>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl border border-darkBorder">
+                    <h3 class="text-base font-bold text-creamLight mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-briefcase text-emeraldNeon"></i> Pengalaman Pengabdian (April 2025 – Maret 2026)
+                    </h3>
+                    <ul class="list-disc list-inside space-y-2 text-xs">
+                        <li><b>Bidang Pendidikan:</b> Mengampu mata pelajaran umum (Matematika, Fisika, Akuntansi) serta Bahasa Arab & Inggris. Bertanggung jawab atas kurikulum harian & menjadi Tutor Kontingen Online Gontor Science Olympiad.</li>
+                        <li><b>Bidang Operasional Unit Usaha:</b> Mengelola transaksi harian, pencatatan jurnal keuangan bulanan, dan audit barang setiap tiga bulan.</li>
+                    </ul>
+                </div>
+
+                <!-- Current Activities List -->
+                <div class="glass-panel p-6 rounded-2xl border border-darkBorder">
+                    <h3 class="text-base font-bold text-creamLight mb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-compass text-emeraldNeon"></i> Aktivitas Saat Ini
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                        <div class="p-3 rounded-lg bg-darkBg/60 border border-darkBorder">
+                            <i class="fa-solid fa-laptop-code text-emeraldNeon mb-1 block"></i>
+                            <b class="text-creamLight block">Studi SI UNESA</b>
+                            <span>Eksplorasi Sistem Informasi & Data</span>
+                        </div>
+                        <div class="p-3 rounded-lg bg-darkBg/60 border border-darkBorder">
+                            <i class="fa-solid fa-pen-fancy text-emeraldNeon mb-1 block"></i>
+                            <b class="text-creamLight block">Karya Literasi</b>
+                            <span>Aktif menulis cerpen & puisi nasional</span>
+                        </div>
+                        <div class="p-3 rounded-lg bg-darkBg/60 border border-darkBorder">
+                            <i class="fa-solid fa-brain text-emeraldNeon mb-1 block"></i>
+                            <b class="text-creamLight block">Pengembangan Diri</b>
+                            <span>Sertifikasi AI Gemini & Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements" class="py-20 px-4 max-w-6xl mx-auto border-t border-darkBorder/40">
+        <div class="mb-12">
+            <span class="text-xs font-bold tracking-widest text-emeraldNeon uppercase">Recognitions</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-creamLight mt-1">Achievements & Certifications</h2>
+            <p class="text-creamMuted text-sm mt-2">
+                Pencapaian akademik, penghargaan kompetisi sains, dan sertifikasi keahlian yang pernah diraih.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Achievement 1 -->
+            <div class="glass-panel p-5 rounded-xl border border-darkBorder flex items-start gap-4 glow-border">
+                <div class="w-10 h-10 rounded-lg bg-emeraldGlow/20 border border-emeraldNeon/40 flex items-center justify-center text-emeraldNeon shrink-0">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+                <div>
+                    <span class="text-[10px] text-emeraldNeon font-bold">2024 • Gontor Science Olympiad</span>
+                    <h4 class="text-base font-bold text-creamLight">Runner Up I Darussalam Math and Science</h4>
+                    <p class="text-xs text-creamMuted mt-1">
+                        Meraih juara 2 bidang Matematika dan Sains pada Gontor Science Olympiad (GSO) 2024 di PMDG Putri Kampus 4.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Achievement 2 -->
+            <div class="glass-panel p-5 rounded-xl border border-darkBorder flex items-start gap-4 glow-border">
+                <div class="w-10 h-10 rounded-lg bg-emeraldGlow/20 border border-emeraldNeon/40 flex items-center justify-center text-emeraldNeon shrink-0">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <div>
+                    <span class="text-[10px] text-emeraldNeon font-bold">2026 - 2029 • Google for Education</span>
+                    <h4 class="text-base font-bold text-creamLight">Siswa Tersertifikasi Gemini AI</h4>
+                    <p class="text-xs text-creamMuted mt-1">
+                        Kualifikasi resmi kemampuan pemanfaatan AI Google di lingkungan pendidikan.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Achievement 3 -->
+            <div class="glass-panel p-5 rounded-xl border border-darkBorder flex items-start gap-4 glow-border">
+                <div class="w-10 h-10 rounded-lg bg-emeraldGlow/20 border border-emeraldNeon/40 flex items-center justify-center text-emeraldNeon shrink-0">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                <div>
+                    <span class="text-[10px] text-emeraldNeon font-bold">2026 • Global Operation Indonesia</span>
+                    <h4 class="text-base font-bold text-creamLight">TOEFL Prediction Score: 537</h4>
+                    <p class="text-xs text-creamMuted mt-1">
+                        Sertifikasi kecakapan Bahasa Inggris tingkat menengah-lanjut.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Achievement 4 -->
+            <div class="glass-panel p-5 rounded-xl border border-darkBorder flex items-start gap-4 glow-border">
+                <div class="w-10 h-10 rounded-lg bg-emeraldGlow/20 border border-emeraldNeon/40 flex items-center justify-center text-emeraldNeon shrink-0">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <div>
+                    <span class="text-[10px] text-emeraldNeon font-bold">2025 • KMI Gontor</span>
+                    <h4 class="text-base font-bold text-creamLight">Tutor Kontingen Online GSO & Syahadah Taqdir</h4>
+                    <p class="text-xs text-creamMuted mt-1">
+                        Penghargaan sebagai tutor pembimbing sains serta sertifikasi partisipasi pelatihan pendidikan KMI.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION (Revisi 3 Email) -->
+    <section id="contact" class="py-20 px-4 max-w-6xl mx-auto border-t border-darkBorder/40">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-6">
+                <span class="text-xs font-bold tracking-widest text-emeraldNeon uppercase">Get In Touch</span>
+                <h2 class="text-4xl sm:text-5xl font-black text-creamLight mt-2 mb-6 tracking-tight">
+                    LET'S WORK TOGETHER
+                </h2>
+                <p class="text-creamMuted text-sm mb-8 leading-relaxed">
+                    Terbuka untuk kolaborasi proyek penulisan, riset data, penulisan konten digital, maupun proyek akademik Sistem Informasi. Jangan ragu untuk menghubungi melalui 3 email resmi berikut:
+                </p>
+
+                <!-- Daftar 3 Email -->
+                <div class="space-y-4">
+                    <!-- Email Akademik UNESA -->
+                    <a href="mailto:26051214100@mhs.unesa.ac.id" class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-4 hover:border-emeraldNeon transition group glow-border">
+                        <div class="w-10 h-10 rounded-lg bg-emeraldGlow/10 text-emeraldNeon flex items-center justify-center group-hover:bg-emeraldNeon group-hover:text-darkBg transition">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-creamMuted uppercase font-bold block">Email Akademik (UNESA)</span>
+                            <span class="text-xs sm:text-sm font-semibold text-creamLight">26051214100@mhs.unesa.ac.id</span>
+                        </div>
+                    </a>
+
+                    <!-- Email Utama / Pribadi -->
+                    <a href="mailto:wirmazakyahdamayanti@gmail.com" class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-4 hover:border-emeraldNeon transition group glow-border">
+                        <div class="w-10 h-10 rounded-lg bg-emeraldGlow/10 text-emeraldNeon flex items-center justify-center group-hover:bg-emeraldNeon group-hover:text-darkBg transition">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-creamMuted uppercase font-bold block">Email Utama</span>
+                            <span class="text-xs sm:text-sm font-semibold text-creamLight">wirmazakyahdamayanti@gmail.com</span>
+                        </div>
+                    </a>
+
+                    <!-- Email Penulis -->
+                    <a href="mailto:antcha.writer07@gmail.com" class="p-4 rounded-xl bg-darkCard border border-darkBorder flex items-center gap-4 hover:border-emeraldNeon transition group glow-border">
+                        <div class="w-10 h-10 rounded-lg bg-emeraldGlow/10 text-emeraldNeon flex items-center justify-center group-hover:bg-emeraldNeon group-hover:text-darkBg transition">
+                            <i class="fa-solid fa-feather"></i>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-creamMuted uppercase font-bold block">Email Khusus Penulis</span>
+                            <span class="text-xs sm:text-sm font-semibold text-creamLight">antcha.writer07@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 flex flex-col justify-between">
+                <div class="glass-panel p-8 rounded-2xl border border-darkBorder glow-border relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-28 h-28 bg-dots-pattern opacity-30 pointer-events-none"></div>
+                    <h3 class="text-lg font-bold text-creamLight mb-4">Sosial Media & Media Penulisan</h3>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <!-- IG First Account -->
+                        <a href="https://instagram.com/zar_ry7" target="_blank" class="p-4 rounded-xl bg-darkBg border border-darkBorder hover:border-emeraldNeon transition text-center">
+                            <i class="fa-brands fa-instagram text-2xl text-emeraldNeon mb-2 block"></i>
+                            <span class="text-[10px] text-creamMuted block">First Account</span>
+                            <span class="text-xs font-bold text-creamLight">@zar_ry7</span>
+                        </a>
+
+                        <!-- IG Writer Account -->
+                        <a href="https://instagram.com/antcha07" target="_blank" class="p-4 rounded-xl bg-darkBg border border-darkBorder hover:border-emeraldNeon transition text-center">
+                            <i class="fa-solid fa-pen-nib text-2xl text-emeraldNeon mb-2 block"></i>
+                            <span class="text-[10px] text-creamMuted block">Writer Account</span>
+                            <span class="text-xs font-bold text-creamLight">@antcha07</span>
+                        </a>
+                    </div>
+
+                    <!-- LinkedIn Direct Link -->
+                    <a href="https://www.linkedin.com/in/wirma-zakyah-damayanti-35b59740a" target="_blank" class="p-4 rounded-xl bg-darkBg border border-darkBorder hover:border-emeraldNeon transition flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-brands fa-linkedin text-xl text-emeraldNeon"></i>
+                            <span class="text-xs font-bold text-creamLight">LinkedIn Profile</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-emeraldNeon"></i>
+                    </a>
+
+                    <!-- Direct Message Form Modal Button -->
+                    <button onclick="alert('Terima kasih! Silakan kirimkan pesan langsung melalui salah satu email di atas.')" class="w-full py-4 rounded-xl bg-emeraldNeon text-darkBg font-bold text-sm hover:bg-emeraldGlow shadow-glow-md transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i> SEND ME A MESSAGE
+                    </button>
+                </div>
+
+                <div class="mt-8 text-center lg:text-right text-xs text-creamMuted">
+                    <p>© 2026 Wirma Zakyah Damayanti. All rights reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
